@@ -3,9 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
 <title>AL-Wakeel</title>
-<script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
 <link rel="stylesheet" href="home.css">
+<style>
+    body { font-family: 'Hind Siliguri', sans-serif; }
+</style>
 </head>
 
 <body>
@@ -18,233 +22,84 @@
     <div class="shape shape-3"></div>
 </div>
 
-<!-- ================== NAVBAR ================== -->
 <nav class="glass-nav">
     <div class="nav-container">
         <a href="#home" class="nav-brand">AL-Wakeel</a>
-
-        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
-
         <ul class="nav-menu" id="navMenu">
-            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-            
-            <li class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle">About ▾</a>
-                <ul class="dropdown-menu">
-                    <li><a href="about.html#ahero" class="dropdown-link">The Wakeel Story</a></li>
-                    <li><a href="about.html#cgrid" class="dropdown-link">Vision & Mission</a></li>
-                    <li><a href="about.html#founders" class="dropdown-link">Leadership Team</a></li>
-                </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle">Activities ▾</a>
-                <ul class="dropdown-menu">
-                    <li><a href="capacity-development.html" class="dropdown-link">Capacity Development</a></li>
-                    <li><a href="policy-activity.html" class="dropdown-link">Policy Advocacy</a></li>
-                </ul>
-            </li>
-
-            <li class="nav-item"><a href="event.html" class="nav-link">Events</a></li>
-            <li class="nav-item"><a href="contact.html" class="nav-btn">Contact</a></li>
+            <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="activities.html" class="nav-link">Activities</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="join-us.html" class="nav-btn">Join Us</a></li>
         </ul>
     </div>
 </nav>
 
+<section class="hero-section" id="home">
+    <div class="hero-bg-image"></div>
+</section>
 
+<section class="bg-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            
+            <div class="flex flex-col items-center px-4 border-r-0 md:border-r border-gray-100 last:border-0">
+                <div class="text-yellow-600 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                        <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                    </svg>
+                </div>
+                <h2 class="text-2xl font-bold text-teal-900 mb-4">Education</h2>
+                <p class="text-gray-600 leading-relaxed text-sm">
+                    Supporting disadvantaged children with access to learning resources.
+            </div>
 
+            <div class="flex flex-col items-center px-4 border-r-0 md:border-r border-gray-100 last:border-0">
+                <div class="text-yellow-600 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                </div>
+                <h2 class="text-2xl font-bold text-teal-900 mb-4">Protection</h2>
+                <p class="text-gray-600 leading-relaxed text-sm">
+                     Providing immediate relief during disasters and emergencies.                </p>
+            </div>
 
+            <div class="flex flex-col items-center px-4">
+                <div class="text-yellow-600 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                </div>
+                <h2 class="text-2xl font-bold text-teal-900 mb-4">Trust</h2>
+                <p class="text-gray-600 leading-relaxed text-sm">
+                    Maintaining a transparent and accountable humanitarian support system.                </p>
+            </div>
 
-<!-- ================== FOOTER ================== -->
+        </div>
+
+        <div class="mt-16 text-center">
+            <a href="#" class="inline-flex items-center px-8 py-3 bg-[#008c45] text-white font-medium rounded-md hover:bg-[#007038] transition duration-300">
+                আরও জানুন
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+
 <footer>
     <div class="footer-container">
         <div class="footer-left">
             © 2026 Al-Wakeel | All Rights Reserved.
         </div>
-
         <div class="footer-right">
             Developed by Trion Tech.
         </div>
+    </div>
 </footer>
-
-<script>
-    /* ================== ACTIVATE MOMENTUM SCROLLING ================== */
-const lenis = new Lenis({
-    duration: 1,       // The higher the value, the slower/smoother the stop
-    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Physics easing function
-    direction: 'vertical',
-    gestureDirection: 'vertical',
-    smooth: true,
-    mouseMultiplier: 1,  // Sensitivity
-    smoothTouch: false,  // Keep mobile scroll native (better UX)
-    touchMultiplier: 2,
-});
-
-// This ensures the scroll animation keeps running
-function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-}
-requestAnimationFrame(raf);
-
-// OPTIONAL: Connect Lenis to your Anchor Links (Smooth jump to sections)
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        lenis.scrollTo(this.getAttribute('href'));
-    });
-});
-/* ================== NEW MOBILE NAV LOGIC ================== */
-const hamburger = document.getElementById("hamburger");
-const navMenu = document.getElementById("navMenu");
-
-// 1. Toggle Mobile Menu
-hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-});
-
-// 2. Close Menu when a link is clicked
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-    // Only close if it's NOT a dropdown toggle
-    if(!n.classList.contains('dropdown-toggle')) {
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
-    }
-}));
-
-// 3. Mobile Dropdown Toggle (Click instead of Hover on Mobile)
-const dropdowns = document.querySelectorAll(".dropdown");
-
-dropdowns.forEach(dropdown => {
-    const toggleBtn = dropdown.querySelector(".dropdown-toggle");
-    
-    toggleBtn.addEventListener("click", (e) => {
-        if (window.innerWidth <= 768) {
-            e.preventDefault(); // Prevent jump
-            dropdown.classList.toggle("active");
-        }
-    });
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-    const hero = document.querySelector(".hero");
-    const navbar = document.querySelector(".navbar");
-    const logo = document.querySelector(".hero-logo");
-    const heading = document.querySelector(".animate-words");
-    const paragraph = document.querySelector(".rise-text");
-    // This now selects the container holding both buttons
-    const buttonContainer = document.querySelector(".animate-btn"); 
-
-    setTimeout(() => {
-        hero.classList.add("bg-active");
-        navbar.classList.add("fade-in");
-    }, 100);
-
-    setTimeout(() => logo.classList.add("logo-active"), 1600);
-
-    const words = heading.innerText.split(" ");
-    heading.innerHTML = "";
-    const baseDelay = 2.6;
-
-    words.forEach((word, i) => {
-        const span = document.createElement("span");
-        span.innerHTML = word + "&nbsp;";
-        span.style.animationDelay = `${baseDelay + i * 0.15}s`;
-        heading.appendChild(span);
-    });
-
-    const totalDelay = baseDelay + words.length * 0.15;
-    paragraph.style.animationDelay = `${totalDelay + 0.5}s`;
-    
-    // Animate the button container
-    buttonContainer.style.animationDelay = `${totalDelay + 1.3}s`;
-});
-
-/* Scroll reveal */
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(e => e.isIntersecting && e.target.classList.add("visible"));
-}, { threshold: 0.2 });
-
-document.querySelectorAll(".reveal-on-scroll").forEach(el => observer.observe(el));
-
-/* ================== RADIAL COUNTER ANIMATION ================== */
-const sectionRadial = document.querySelector('.impact-section-radial');
-let radialAnimated = false;
-
-const animateRadial = () => {
-    // 1. Select all cards
-    const cards = document.querySelectorAll('.stat-card-radial');
-
-    cards.forEach(card => {
-        // --- A. Circle Animation ---
-        const progressWrap = card.querySelector('.radial-progress');
-        const circle = card.querySelector('.progress-circle');
-        const percentage = progressWrap.getAttribute('data-percentage');
-        
-        // Calculate stroke offset (283 is the circumference for r=45)
-        // Formula: Circumference - (Circumference * percentage / 100)
-        const offset = 283 - (283 * percentage / 100);
-        
-        // Slight delay to ensure visual smoothness
-        setTimeout(() => {
-            circle.style.strokeDashoffset = offset;
-        }, 100);
-
-        // --- B. Number Counter ---
-        const counter = card.querySelector('.counter');
-        const target = +counter.getAttribute('data-target');
-        const duration = 2000; 
-        const increment = target / (duration / 16);
-        
-        let current = 0;
-        const updateCounter = () => {
-            current += increment;
-            if (current < target) {
-                counter.innerText = Math.ceil(current);
-                requestAnimationFrame(updateCounter);
-            } else {
-                counter.innerText = target;
-            }
-        };
-        updateCounter();
-    });
-};
-
-const observerRadial = new IntersectionObserver((entries) => {
-    if (entries[0].isIntersecting && !radialAnimated) {
-        animateRadial();
-        radialAnimated = true;
-    }
-}, { threshold: 0.5 });
-
-if (sectionRadial) {
-    observerRadial.observe(sectionRadial);
-}
-
-
-
-
-
-
-
-/* ================== SCROLL PROGRESS BAR ================== */
-window.onscroll = function() {
-    updateProgressBar();
-};
-
-function updateProgressBar() {
-    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const scrolled = (winScroll / height) * 100;
-    document.getElementById("progressBar").style.width = scrolled + "%";
-}
-
-</script>
 
 </body>
 </html>
